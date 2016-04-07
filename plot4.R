@@ -15,7 +15,7 @@ plot4 <- function(fileName='rawdata/household_power_consumption.txt'){
      
      # Plot 2
      plot(strptime(paste(dmy(t2$Date), t2$Time), "%Y-%m-%d %H:%M:%S"), t2$Voltage, type = 'l',
-          xlab = "datetime")
+          ylab = "Voltage", xlab = "datetime")
      
      # Plot 3
      plot(strptime(paste(dmy(t2$Date), t2$Time), "%Y-%m-%d %H:%M:%S"), t2$Sub_metering_1, 
